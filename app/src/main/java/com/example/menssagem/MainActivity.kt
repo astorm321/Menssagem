@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val menssagem = editTextMenssagem.text.toString()
 
         val intent = Intent(this, MostraMenssagemActivity::class.java)
+        intent.putExtra("MENSSAGEM",menssagem)
         startActivity(intent)
     }
 }
